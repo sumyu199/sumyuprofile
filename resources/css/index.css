@@ -107,6 +107,7 @@ html {
     justify-content: center
   }
   .text{
+    display: flex;
     padding-left:15rem;
     color: black;
     font-size: larger;
