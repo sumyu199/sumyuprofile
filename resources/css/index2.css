@@ -1,0 +1,176 @@
+html {
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    html {
+      font-size: 14px;
+    }
+  }
+/* header */
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.44rem;
+    padding: 0 12%;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+  }
+  .header .logo {
+    flex-grow: 1;
+    color: #f5a170;
+  }
+  
+  .header li {
+    display: inline;
+    padding-right: 2.22rem;
+  }
+  
+  .header li a {
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .header .logo {
+      flex-grow: 0;
+    }
+  }
+    /* Banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    background: url("../photo/datascience.jpeg") center center no-repeat;
+    background-size: cover;
+    color: #f18e55;
+  }
+  
+  .banner h1 {
+    padding: .55rem 0;
+    border-top: 4px solid #f5a170;
+    border-bottom: 4px solid #f5a170;
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
+  
+  .banner h2 {
+    padding-bottom: 1.11rem;
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .banner {
+      height: 40rem;
+    }
+  
+    .banner h2 {
+      font-size: 8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 530px) {
+    .banner {
+      height: 30rem;
+    }
+  
+    .banner h1 {
+      font-size: 6rem;
+    }
+  }
+.project{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Overview h2{
+  color: rgba(7, 7, 122, 0.849);
+}
+.table{
+  text-align: left;
+  color: black;
+  border-top: 2px solid cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+  border-left:2px solid cornflowerblue;
+  border-right:2px solid cornflowerblue;
+}
+
+.steps{
+  text-align: left;
+  color: black;
+  border-top: 2px solid cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+  border-left:2px solid cornflowerblue;
+  border-right:2px solid cornflowerblue;
+  
+}
+
+.title{
+  color: rgba(7, 7, 122, 0.849);
+  font-weight: bolder;
+}
+
+#chart{
+    height: 20rem;
+}
+#Description{
+  text-align: left;
+}
+#Description h2{
+  color: rgba(7, 7, 122, 0.849);
+}
+#Technical{
+  text-align: left;
+  border-top: 2px solid cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+  border-left:2px solid cornflowerblue;
+  border-right:2px solid cornflowerblue;
+}
+#Technical h2{
+  color: rgba(7, 7, 122, 0.849);
+}
+#Requirement h2{
+  color: rgba(7, 7, 122, 0.849);
+}
+#Results h2{
+  color: rgba(7, 7, 122, 0.849);
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.44rem;
+  padding: 0 12%;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+}
+footer li {
+  display: inline;
+}
+footer li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.right{
+  padding-right: 50rem;
+
+}
