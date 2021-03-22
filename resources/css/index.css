@@ -123,23 +123,25 @@ html {
     margin-bottom: 1.11rem;
   }
 
-  
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+ {#selfie{
+  display: flex;
+  height: 20rem;
+  align-items: center;
+
+}}
+   
 
 #selfie{
+    display: flex;
     height: 30rem;
     align-items: center;
 
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px){
-    #selfie{
-      height: 8rem;
-      align-items: center;
-  
-  }
-  }
+
   
 .link{
     padding-left:4rem;
@@ -177,12 +179,7 @@ footer li a {
   color: #4a4a4a;
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
- {.header .logo {
-  visibility: none;}
-  }
+
 .left{
     position: fixed;
     bottom: 0;
