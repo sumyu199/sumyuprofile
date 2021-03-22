@@ -108,7 +108,7 @@ html {
   }
   .text{
     display: flex;
-    padding-left:15rem;
+    padding-left:16rem;
     color: black;
     font-size: larger;
   }
@@ -129,8 +129,9 @@ html {
   and (max-device-width: 480px)
  {#selfie{
   display: flex;
-  height: 20rem;
-  align-items: center;
+  height: 16rem;
+  align-items: left;
+  text-align: left;
 
 }}
    
@@ -147,18 +148,12 @@ html {
 .link{
     padding-left:4rem;
 }
-@media only screen and (max-width: 1000px){
-    .link.image-container2{
+
+.link.image-container2{
     display: inline-block;
     width: 10%;
 }
-}
-@media only screen and (max-width: 680px){
-  .link.image-container2{
-  display: inline-block;
-  width: 10%;
-}
-}
+
 
 footer{
   display: flex;
