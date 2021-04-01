@@ -178,6 +178,12 @@ footer li a {
     left: 0;;
   
   }
+  .left{
+    position: fixed;
+    bottom: 0;
+    right: 0;;
+  
+  }
   
   
 
