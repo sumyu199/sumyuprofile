@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree</title>
+    <link rel="shortcut icon" href="./resources/photo/icons8-file-64.png"/>
+    <link rel="stylesheet" href="./resources/css/index4.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <nav class = 'header'>
+        <span class = 'logo'>Profile</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="streamlit.html">Previous Project</a></li>
+     </nav>
+<!-- Banner -->
+    <div class="banner">
+        <h1>Project 3</h1>
+        <h2>Decision Tree</h2>
+    </div>
+
+<!-- Introduction -->
+    <div class= 'project'>
+        <h2>Decision Trees with Titanic</h2>  
+        <img src = './resources/photo/20354882.jpeg'>  
+        <p>This project is inspired by a prediction competition "Titanic - Machine Learning from Disaster" from <a href = 'https://www.kaggle.com/c/titanic/overview'><span class="iconify" data-icon="simple-icons:kaggle" data-inline="false"></span>aggle</a>.</p>
+        <div class = 'table'>
+            <b>Table of Content</b>
+            <ul>
+                <a href = '#Overview'><li>Project Overview </li></a>
+                <a href = '#Description'><li>Data Description</li></a>
+                <a href = '#Technical'><li>Technical Overview</li></a>
+                <a href = '#Results'><li>Results</li></a>
+              </ul>
+        </div>
+        <div id = 'Overview'>
+            <h2> Project Overview</h2>
+            <p>In this project,the historical data of titanic passengers is trained to create a predictor to predict <br>
+               whether the passenger survived or not.<br>
+               For this project,I am using <b>scikit-learn</b> to build different predictors and model.<br>
+               The final predictor decided to be <b>Decision tree</b> which is a kind of supervised learning to process<br>
+               the classification.
+            </p>
+            <div class="steps">
+                This project is divided into three steps:
+                <ul>
+                    <li class = 'title'> Clean the Data and Exploratory Analysis</li>
+                        <p>For a tree decision model,the features are ideally to be continuous variables hat have an affect<br> 
+                            on our dependent variable or binary.<br>
+                            Therefore, in this part,I transformed sex,cabin and title into binary using <b>lamba</b><br>
+                            and fill the nan of the data with <b>numpy</b>.<br>
+                            Also,for a better understanding of the relationship between survival and features,I examed the<br>
+                            <b>correlation</b> of the data and visualised the probability of survival of different features<br><br>
+                        </p>
+ 
+                    <li class = 'title'>Data Selection and Split the Data into Training and Testing Sets</li>
+                        <p>In this part,I selected different sets of features to create several models and split the<br>
+                            data into training and testing sets with random state = 1 to ensure the sets are reproducible<br>
+                            which is beneficial to compare the results of different models.<br><br>
+                        </p>
+                      
+                    <li class = 'title'>Create and and Evaluate the Models</li>
+                        <p>In this part,I created both random forest classifier adn decision tree classifier.<br>
+                            To decide which classifier should be used,score function is used to indicate the efficiency<br>
+                            of forest classifier and the decision tree classifier with different depth and different features.<br>
+                            Eventually,decision tree with the best depth preforms better than forest.<br><br>
+                        </p>
+                
+                </ul>
+            </div>
+        </div>
+        <div id = "Description">
+            <h2>Data Description</h2>
+            <p>The data has been provided by Kaggle.The dataset contains 2 database files.</p>
+            <p>The two databases files included:</p>
+            <ul>
+                <li><a href = 'https://github.com/sumyu199/titanic_prediction/blob/main/data.csv' target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-excel-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM5.884 6.68L8 9.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 10l2.233 2.68a.5.5 0 0 1-.768.64L8 10.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 10 5.116 7.32a.5.5 0 1 1 .768-.64z"/>
+                  </svg>Data</a></li>
+                  <p>source of training data and test data</p>
+                    <ul>
+                        <li>PassengerId</li>
+                        <li>Survived</li>
+                        <li>Pclass</li>
+                        <li>Name</li>
+                        <li>Sex</li>
+                        <li>Age</li>
+                        <li>SibSp</li>
+                        <li>Parch</li>
+                        <li>Ticket</li>
+                        <li>Fare</li>
+                        <li>Cabin</li>
+                    </ul>
+                <li><a href = 'https://github.com/sumyu199/titanic_prediction/blob/main/sample.csv' target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-excel-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM5.884 6.68L8 9.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 10l2.233 2.68a.5.5 0 0 1-.768.64L8 10.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 10 5.116 7.32a.5.5 0 1 1 .768-.64z"/>
+                    </svg>Sample</a></li>
+                    <p>source of Sample data</p>
+                    <ul>
+                        <li>PassengerId</li>
+                        <li>Pclass</li>
+                        <li>Name</li>
+                        <li>Sex</li>
+                        <li>Age</li>
+                        <li>SibSp</li>
+                        <li>Parch</li>
+                        <li>Ticket</li>
+                        <li>Fare</li>
+                        <li>Cabin</li>
+                    </ul>
+            </ul>
+        </div>
+        <div id = 'Technical'>
+            <h2>Technical Overview</h2>
+            <p>This project has been divided into various steps which include:</p>
+            <ul>
+                <li>Data Exploration and Cleaning</li>
+                <li>Data Visualisation</li>
+                <li>Machine learning Descision Tree</li>
+            </ul>
+        </div>
+        <div id = 'Results'>
+            <h2>Results</h2>
+            <p>The predictors have been clearly documented in the Jupyter Notebook.
+            Please click <a href="https://github.com/sumyu199/titanic_prediction/blob/main/titanic.ipynb" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+              </svg>here</a> to view the full project</p>
+              <a href="https://github.com/sumyu199/titanic_prediction/blob/main/titanic.ipynb" target="_blank"><img src="./resources/photo/Screenshot 2021-04-01 at 16.14.45.png"></a>
+            
+        </div>  
+    </div>
+
+
+<footer>
+    <ul>
+       <li class="right"><a href="./streamlit.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg></a>
+        </li>
+    </ul>
+</footer>
+
+
+
+</body>
+</html>
