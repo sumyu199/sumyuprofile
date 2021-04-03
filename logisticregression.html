@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Regression</title>
+    <link rel="shortcut icon" href="./resources/photo/icons8-file-64.png"/>
+    <link rel="stylesheet" href="./resources/css/index5.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <nav class = 'header'>
+        <span class = 'logo'>Profile</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="streamlit.html">Previous Project</a></li>
+     </nav>
+<!-- Banner -->
+    <div class="banner">
+        <h1>Project 4</h1>
+        <h2>Decision Tree</h2>
+    </div>
+
+<!-- Introduction -->
+    <div class= 'project'>
+        <h2><img src="./resources/photo/R_colour.svg" width="40" height="40"> Logistic Regression with Olympics</h2>  
+        <img class = 'logo' src = './resources/photo/london-olympics-2012-1-728.jpeg'>  
+        <p>This project is inspired by one of my statistic courseworks from  <img src = './resources/photo/nottingham.png' style="height:20px ; width: 20px;">  University of Nottingham</p>
+        <div class = 'table'>
+            <b>Table of Content</b>
+            <ul>
+                <a href = '#Overview'><li>Project Overview </li></a>
+                <a href = '#Description'><li>Data Description</li></a>
+                <a href = '#Technical'><li>Technical Overview</li></a>
+                <a href = '#Results'><li>Results</li></a>
+              </ul>
+        </div>
+        <div id = 'Overview'>
+            <h2> Project Overview</h2>
+            <p>In this project,the 2012 Olympics Althletes data is investigated to examinate the correlations of 
+                physical features and possibility of winning a competition.<br>
+                For this project,I am using different plots and <b>hypothesis tests</b> to evaluate the correlations<br>
+                and using <b>logistic regression</b> to build a predictor model for the classification of recieved a reward or not.
+            </p>
+            <div class="steps">
+                This project is divided into three steps:
+                <ul>
+                    <li class = 'title'> Clean the Data and Exploratory Analysis</li>
+                        <p>For a regression model,the features are ideally to be continuous variables hat have an affect<br> 
+                            on our dependent variable or binary.<br>
+                            Therefore, in this part,I filled all NA values with mean values and transform Medal column into binary<br>
+                            structure.Also,for a better understanding of the relationship between Medals and features,I visualised<br>
+                            the features of both medalists and non-medalists with <b>QQ plots, Histograms and Boxplot and compared them.</b><br>
+                            Futhermore, I used <b>t-test</b> to see whether the medalists and non-medalists are having different mean features and<br>
+                            all the results are positive so we can prove that medalists should have beneficial features to win.<br><br>
+                        </p>
+ 
+                    <li class = 'title'>Split the Data into Training and Testing Sets</li>
+                        <p>In this part,to start with,I set.seed(123) to ensure the partition is reproducible and the ratio of training and testing sets is 8:2.<br>
+                           For the model,the inital features are Height,Weight and Age,the label is Medal with numerical structure.<br>
+                        </p>
+                      
+                    <li class = 'title'>Create and and Evaluate the Models</li>
+                        <p>In this part,I decided to use logistic regression <b>glm</b> to build the model because logistic regresssion 
+                            is suitable for classification when the the dependent variable is binary and we only have few features.<br>
+                            To decide which features should be used,<b>z-test and p-value</b> are used to indicate the significance of<br>
+                            association between label and features.<br>
+                            Eventually,Height is having the most significant association with the label.As a results,Height is the only features<br>
+                            of the model and the classification prediction accuracy is about 81%.<br>
+                            However,there are many different variables which are also related to be rewarded or not for example length of training<br>
+                            years,experiences and talents so for the future improvement,I might conclude more features in the model.
+                        </p>
+                
+                </ul>
+            </div>
+        </div>
+        <div id = "Description">
+            <h2>Data Description</h2>
+            <p>The data has been provided by<img src = './resources/photo/nottingham.png' style="height:20px ; width: 20px;">  University of Nottingham.The dataset contains 1 database files.</p>
+            <p>The databases files included:</p>
+            <ul>
+                <li><a href = 'https://raw.githubusercontent.com/sumyu199/athlete/main/athlete_data_2012.csv' target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-excel-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM5.884 6.68L8 9.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 10l2.233 2.68a.5.5 0 0 1-.768.64L8 10.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 10 5.116 7.32a.5.5 0 1 1 .768-.64z"/>
+                  </svg>athlete_data_2012.csv</a></li>
+                    <ul>
+                        <li>ID</li>
+                        <li>Name</li>
+                        <li>Sex</li>
+                        <li>Age</li>
+                        <li>Height</li>
+                        <li>Weight</li>
+                        <li>Team</li>
+                        <li>NOC</li>
+                        <li>Sport</li>
+                        <li>Event</li>
+                        <li>Medal</li>
+                    </ul><br>
+            </ul>
+        </div>
+        <div id = 'Technical'>
+            <h2>Technical Overview</h2>
+            <p>This project has been divided into various steps which include:</p>
+            <ul>
+                <li>Data Exploration and Cleaning</li>
+                <li>Data Visualisation</li>
+                <li>Hypothesis Test</li>
+                <li>Machine learning Logistic Regression</li>
+            </ul>
+        </div>
+        <div id = 'Results'>
+            <h2>Results</h2>
+            <p>The predictors have been clearly documented in the Rstudio<img src="./resources/photo/R_colour.svg" width="20" height="20">.
+            Please click <a href="https://github.com/sumyu199/athlete/blob/main/analysing_athletedata.Rmd" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+              </svg>here</a> to view the full project</p>
+              <a href="https://sumyu199.github.io/athlete/" target="_blank"><img class = 'sc' src="./resources/photo/r.png"></a>
+            
+        </div>  
+    </div>
+
+
+<footer>
+    <ul>
+       <li class="right"><a href="./decisiontree.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg></a>
+        </li>
+
+    </ul>
+</footer>
+
+
+
+</body>
+</html>

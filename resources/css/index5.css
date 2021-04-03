@@ -100,8 +100,9 @@ html {
 }
 .project h2{
     color:rgba(7, 7, 122, 0.849) ;
+    text-align: center;
 }
-.project img{
+.project .logo{
     padding-top: 0.5rem;
     width:20rem;
   }
@@ -159,8 +160,9 @@ html {
 }
 
 #Results .sc{
-  height: 12rem;
+    height: 12rem;
 }
+
 footer{
   display: flex;
   justify-content: space-around;
