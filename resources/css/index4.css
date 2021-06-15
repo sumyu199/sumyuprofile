@@ -28,14 +28,21 @@ html {
     font-size: 1rem;
   }
     
-@media only screen and (max-width: 550px) {
+  
+  @media only screen and (max-width: 750px) {
     .header {
-      flex-direction: column;
+      flex-direction:column;
+      font-size: 12px;
+     
+    
     }
-
+    .header li {
+      display: flex;
+      
+    }
+    
   
-  
-  .header .logo {
+   .header .logo {
       flex-grow: 0;
     }
   }
@@ -63,9 +70,8 @@ html {
      justify-content: center;
      align-items: center;
      background-color: rgb(254, 231, 218);
-     height: 14rem;
-     background-size: cover;
      color: #f5a170;
+     height: 220px;
    }
  
  
@@ -81,16 +87,14 @@ html {
  
      font-size: 2.5rem;
    }
+ 
+ @media only screen and (max-width: 750px) {  
+     .banner h2 {
+       font-size: 3rem;
+     }
+   }
 
-@media only screen and (max-width: 750px) {
-    .banner {
-      height: 40rem;
-    }
-  
-    .banner h2 {
-      font-size: 3rem;
-    }
-  }
+
   
 .project{
     justify-content: center;

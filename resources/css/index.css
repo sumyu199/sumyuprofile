@@ -28,11 +28,20 @@ html {
     font-size: 1rem;
   }
     
-@media only screen and (max-width: 550px) {
-    .header {
-      flex-direction: column;
-    }
-
+@media only screen and (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  
+  }
+  .header li {
+    display: flex;
+    
+    
+  }
+  .header li .cert{
+  visibility: hidden;
+  }
   
   
   .header .logo {
@@ -63,9 +72,8 @@ html {
     justify-content: center;
     align-items: center;
     background-color: rgb(254, 231, 218);
-    height: 14rem;
-    background-size: cover;
     color: #f5a170;
+    height: 220px;
   }
 
 
@@ -82,11 +90,7 @@ html {
     font-size: 2.5rem;
   }
 
-@media only screen and (max-width: 750px) {
-    .banner {
-      height: 40rem;
-    }
-  
+@media only screen and (max-width: 750px) {  
     .banner h2 {
       font-size: 3rem;
     }
