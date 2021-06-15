@@ -60,28 +60,27 @@ html {
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(254, 231, 218);
-  height: 15rem;
-  background-size: cover;
-  color: #f5a170;
-}
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(254, 231, 218);
+   height: 14rem;
+   background-size: cover;
+   color: #f5a170;
+ }
 
 
 
 .banner h1 {
-  padding: .55rem 0;
-  border-top: 4px solid #f5a170;
-  border-bottom: 4px solid #f5a170;
-  font-size: 3rem;
-  letter-spacing: 0.1rem;
-}
-
+   border-top: 3px solid #f5a170;
+   border-bottom: 3px solid #f5a170;
+   font-size: 3rem;
+   letter-spacing: 0.1rem;
+ }
+ 
 .banner h2 {
-  padding-bottom: 1rem;
-  font-size: 2.5rem;
-}
+
+   font-size: 2.5rem;
+ }
 @media only screen and (max-width: 750px) {
   .banner {
     height: 40rem;
