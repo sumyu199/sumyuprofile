@@ -153,13 +153,11 @@ html {
 }
    
   
-.link{
-  align-items: center;
-}
+
 
 .link.image-container2{
     display: inline-block;
-    width: 20%;
+    width: 18%;
 }
 
 
