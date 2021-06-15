@@ -62,8 +62,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25rem;
-    background: url( "../photo/datascience.jpeg") center center no-repeat;
+    background-color: rgb(254, 231, 218);
+    height: 15rem;
     background-size: cover;
     color: #f5a170;
   }
@@ -74,13 +74,13 @@ html {
     padding: .55rem 0;
     border-top: 4px solid #f5a170;
     border-bottom: 4px solid #f5a170;
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: 0.1rem;
   }
   
 .banner h2 {
-    padding-bottom: 1.11rem;
-    font-size: 4rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
   }
 
 @media only screen and (max-width: 750px) {
@@ -98,7 +98,7 @@ html {
 
 .intro{
     padding: 2rem 25% 4rem 25%;
-    background-color: rgb(254, 231, 218);
+    background-color: rgb(245, 207, 185);
     color: #4a4a4a;
   }
   .container {
@@ -107,8 +107,7 @@ html {
     justify-content: center
   }
   .text{
-    display: flex;
-    padding-left:16rem;
+    
     color: black;
     font-size: larger;
   }
@@ -153,7 +152,7 @@ html {
    
   
 .link{
-    padding-left:4rem;
+  align-items: center;
 }
 
 .link.image-container2{
