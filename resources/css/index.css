@@ -47,17 +47,33 @@ html {
     }
   }
   @media only screen and (max-width: 450px) {
+
   .header {
-      flex-direction:row-reverse;
-      visibility: hidden;
-      
-     
-    
+      visibility: hidden; 
+      height: 0rem;   
     }
-  .header li {
-      visibility:visible;
-      font-size: 0.75rem;
-    }
+  
+  .banner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(243, 237, 234);
+   color: #f5a170;
+   height: 14rem;
+   text-align: center;
+ }
+  .banner h1 {
+  border-top:2px solid #f5a170;
+  border-bottom: 2px solid #f5a170;
+  font-size: 1.5rem;
+  letter-spacing: 0rem;
+}
+
+  .banner h2 {
+
+  font-size: 1.5rem;
+ }
 } 
 
   .header .logo {
@@ -87,6 +103,7 @@ html {
     background-color: rgb(254, 231, 218);
     color: #f5a170;
     height: 14rem;
+    text-align: center;
   }
 
 
@@ -118,10 +135,15 @@ html {
 
 /* Introduction */
 
+.title{
+  text-align: left;
+}
 .intro{
-    padding: 2rem 25% 4rem 25%;
+    text-align:center;
+    padding: 2rem 10% 2rem 2rem;
     background-color: rgb(245, 207, 185);
     color: #4a4a4a;
+    height: 48rem;
   }
   .container {
     display: flex;
@@ -134,23 +156,30 @@ html {
     font-size: larger;
   }
   
-.first-photo{
-    object-fit: scale-down; 
-    max-width: 100%;
-    height: auto;
-    padding: 1.11rem;
-    border-radius: 0.3rem;
-  }
+
+  #selfie{
+      object-fit: scale-down; 
+      max-width: 100%;
+      height: auto;
+      padding: 1.11rem;
+      border-radius: 0.3rem;
+      display: flex;
+      height: 14rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   
-.first-photo.image-container {
-    overflow: hidden;
-    margin-bottom: 1.11rem;
-  }
+
 
 @media only screen and (max-width: 750px)
  {#selfie{
   display: flex;
   height: 14rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 
 }}
 @media only screen and (max-width: 750px){
@@ -166,6 +195,7 @@ html {
     display: flex;
     height: 25rem;
     align-items: center;
+    text-align: center;
 
 }
    
@@ -174,7 +204,7 @@ html {
 
 .link.image-container2{
     display: inline-block;
-    width: 18%;
+    width: 15%;
 }
 
 

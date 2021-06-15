@@ -46,17 +46,33 @@ html {
     }
   }
   @media only screen and (max-width: 450px) {
+
     .header {
-        flex-direction:row-reverse;
-        visibility: hidden;
-        
-       
-      
+        visibility: hidden; 
+        height: 0rem;   
       }
-    .header li {
-        visibility:visible;
-        font-size: 0.75rem;
-      }
+    
+    .banner {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(243, 237, 234);
+     color: #f5a170;
+     height: 14rem;
+     text-align: center;
+   }
+    .banner h1 {
+    border-top:2px solid #f5a170;
+    border-bottom: 2px solid #f5a170;
+    font-size: 1.5rem;
+    letter-spacing: 0rem;
+  }
+  
+    .banner h2 {
+  
+    font-size: 1.5rem;
+   }
   } 
   
   .header .logo {
@@ -89,23 +105,31 @@ html {
  
  
  
- .banner h1 {
-     border-top: 3px solid #f5a170;
-     border-bottom: 3px solid #f5a170;
-     font-size: 3rem;
-     letter-spacing: 0.1rem;
-   }
-   
- .banner h2 {
- 
-     font-size: 2.5rem;
-   }
- 
- @media only screen and (max-width: 750px) {  
-     .banner h2 {
-       font-size: 3rem;
-     }
-   }
+
+.banner h1 {
+    border-top: 3px solid #f5a170;
+    border-bottom: 3px solid #f5a170;
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+  }
+  
+.banner h2 {
+
+    font-size: 2.3rem;
+  }
+
+@media only screen and (max-width: 750px) {
+  .banner {
+     height: 10rem;
+   }  
+    .banner h1 {
+      font-size: 2rem;
+    }
+    .banner h2 {
+    font-size: 2rem;
+    }
+  }
+  
   
 .project{
     justify-content: center;
