@@ -75,7 +75,7 @@ html {
   font-size: 1.5rem;
  }
  .intro{
-  height: 65rem;
+  height: 70rem;
 }
 } 
 
@@ -189,6 +189,8 @@ html {
     .link{
       padding-left:0;
       height: 75%;
+      padding-bottom: 5%;
+      height: 5px;
 
     }
   }
