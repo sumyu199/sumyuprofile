@@ -46,6 +46,20 @@ html {
       flex-grow: 0;
     }
   }
+  @media only screen and (max-width: 450px) {
+    .header {
+        flex-direction:row-reverse;
+        visibility: hidden;
+        
+       
+      
+      }
+    .header li {
+        visibility:visible;
+        font-size: 0.75rem;
+      }
+  } 
+  
   .header .logo {
     flex-grow: 1;
     color: #f5a170;

@@ -54,7 +54,20 @@ html {
     color: #4a4a4a;
   }
 
-
+  @media only screen and (max-width: 450px) {
+    .header {
+        flex-direction:row-reverse;
+        visibility: hidden;
+        
+       
+      
+      }
+    .header li {
+        visibility:visible;
+        font-size: 0.75rem;
+      }
+  } 
+  
   /* Banner */
 
   .banner {
