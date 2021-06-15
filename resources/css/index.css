@@ -113,8 +113,8 @@ html {
   }
   
 .first-photo{
+    object-fit: scale-down; 
     max-width: 100%;
-    min-width: 150px;
     height: auto;
     padding: 1.11rem;
     border-radius: 0.3rem;
