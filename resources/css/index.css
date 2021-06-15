@@ -28,26 +28,26 @@ html {
     font-size: 1rem;
   }
     
+
 @media only screen and (max-width: 750px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  
-  }
-  .header li {
-    display: flex;
+    .header {
+      flex-direction:column;
+      font-size: 12px;
+     
     
+    }
+    .header li {
+      display: flex;
+      
+    }
     
-  }
-  .header li .cert{
-  visibility: hidden;
-  }
   
-  
-  .header .logo {
+   .header .logo {
       flex-grow: 0;
     }
   }
+  
+
   .header .logo {
     flex-grow: 1;
     color: #f5a170;
@@ -73,7 +73,7 @@ html {
     align-items: center;
     background-color: rgb(254, 231, 218);
     color: #f5a170;
-    height: 220px;
+    height: 14rem;
   }
 
 
@@ -81,18 +81,24 @@ html {
 .banner h1 {
     border-top: 3px solid #f5a170;
     border-bottom: 3px solid #f5a170;
-    font-size: 3rem;
+    font-size: 2.3rem;
     letter-spacing: 0.1rem;
   }
   
 .banner h2 {
 
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
-@media only screen and (max-width: 750px) {  
+@media only screen and (max-width: 750px) {
+  .banner {
+     height: 10rem;
+   }  
+    .banner h1 {
+      font-size: 2rem;
+    }
     .banner h2 {
-      font-size: 3rem;
+    font-size: 2rem;
     }
   }
   
@@ -128,21 +134,18 @@ html {
     margin-bottom: 1.11rem;
   }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+@media only screen and (max-width: 750px)
  {#selfie{
   display: flex;
-  height: 16rem;
+  height: 14rem;
   align-items: left;
   text-align: left;
 
 }}
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px){
+@media only screen and (max-width: 750px){
     .link{
       padding-left:2rem;
+      height: 75%;
 
     }
   }
